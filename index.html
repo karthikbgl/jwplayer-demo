@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <base href="http://www.bjoinfilms.com"></base>
+    <meta charset="utf-8">
+    <title>bjoin films REEL</title>
+    <script src="http://jwpsrv.com/library/unAXiN_2EeSrHgp+lcGdIw.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+        $(function(){
+
+            jwplayer("playlist-jwplayer").setup({
+                //Alternatively, playlist could be an rss feed or JSON feed
+
+              playlist: [{
+                image: "http://www.bjoinfilms.com/video/recent/poster/1.jpg",
+                sources: [{ 
+                  file: "http://www.bjoinfilms.com/video/recent/1.mp4",
+                  file: "http://www.bjoinfilms.com/video/recent/1.webm",
+              }],
+              title: "Some random title 1",
+          },
+
+          {
+            image: "http://www.bjoinfilms.com/video/recent/poster/2.jpg",
+            sources: [{ 
+              file: "http://www.bjoinfilms.com/video/recent/2.mp4",
+              file: "http://www.bjoinfilms.com/video/recent/2.webm",
+          }],
+          title: "Some random title 2",
+        },
+
+        {
+            image: "http://www.bjoinfilms.com/video/recent/poster/3.jpg",
+            sources: [{ 
+              file: "http://www.bjoinfilms.com/video/recent/3.mp4",
+              file: "http://www.bjoinfilms.com/video/recent/3.webm",
+          }],
+          title: "Some random title 3",
+        },
+
+        {
+            image: "http://www.bjoinfilms.com/video/recent/poster/4.jpg",
+            sources: [{ 
+              file: "http://www.bjoinfilms.com/video/recent/4.mp4",
+              file: "http://www.bjoinfilms.com/video/recent/4.webm",
+          }],
+          title: "Some random title 4",
+        },
+
+        {
+            image: "http://www.bjoinfilms.com/video/recent/poster/5.jpg",
+            sources: [{ 
+              file: "http://www.bjoinfilms.com/video/recent/5.mp4",
+              file: "http://www.bjoinfilms.com/video/recent/5.webm",
+          }],
+          title: "Some random title 5",
+        },
+
+        ]
+
+        ,
+        width: "100%",
+        aspectratio: "16:9",
+        autostart: true,
+        repeat: true,
+        //height: '100%',
+        listbar: {
+            position: "bottom",
+            size: 300
+        }
+        });
+
+
+        });
+    </script>
+</head>
+<body>
+
+    <div class="pageContent">
+        <div class="leftLeftRecent"></div>
+        <div class="indexPageVideoCenterRecent">
+            <div id="playlist-jwplayer"></div>
+        </div>
+
+        <div class="rightRightRecent"></div>
+        <div class="indexPageVideoRight">
+        </div>
+    </div>
+
+
+</body>
+</html>
